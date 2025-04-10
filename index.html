@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- navbar area -->
+      <nav aria-label="Main navigation">
+        <div class="nav_container">
+          <div class="nav_left-section">
+            <button id="menu-btn" class="hidden menu" type="button">
+              <img src="./img/icon-menu.svg" alt="open menu icon" />
+            </button>
+
+            <img
+              src="./img/logo.svg"
+              alt="sneakers company logo"
+              class="nav_logo"
+            />
+            <div class="overlay"></div>
+            <ul class="nav_links">
+              <button class="close-btn hidden" type="button">
+                <img src="./img/icon-close.svg" alt="close menu icon" />
+              </button>
+              <li class="nav_link">Collections</li>
+              <li class="nav_link">Men</li>
+              <li class="nav_link">Women</li>
+              <li class="nav_link">About</li>
+              <li class="nav_link">Contact</li>
+            </ul>
+          </div>
+          <div class="nav_right-section">
+            <!-- Cart area -->
+            <div class="cart-container">
+              <button class="cart-btn">
+                <span class="indicator"></span>
+                <img src="./img/icon-cart.svg" alt="cart icon" class="cart" />
+              </button>
+              <div class="cart-wrp invisible">
+                <p class="cart-heading">Cart</p>
+                <div class="divider"></div>
+                <div class="cart-content empty">
+                  <p>Your cart is empty</p>
+                </div>
+              </div>
+            </div>
+            <img
+              src="./img/image-avatar.png"
+              alt="user's profile picture"
+              class="avatar"
+            />
+          </div>
+        </div>
+      </nav>
+      <main>
+        <!-- thumbnails -->
+        <section class="thumbnails">
+          <img
+            src="./img/image-product-1.jpg"
+            alt="product"
+            class="main-thumbnail invisible-mob"
+          />
+          <div class="mobile-thumb hidden">
+            <img
+              src="./img/image-product-1.jpg"
+              class="thumb-mob"
+              alt="A pair of stylish sneakers with a beige and white color scheme, displayed against an orange and beige background."
+            />
+            <button id="next">
+              <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m2 1 8 8-8 8"
+                  stroke="#1D2026"
+                  stroke-width="3"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <button id="previous">
+              <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 1 3 9l8 8"
+                  stroke="#1D2026"
+                  stroke-width="3"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+          <div>
+            <div class="preview">
+              <img
+                class="selected"
+                src="./img/image-product-1-thumbnail.jpg"
+                alt="A pair of stylish sneakers with a beige and white color scheme, displayed against an orange and beige background."
+              />
+              <img
+                src="./img/image-product-2-thumbnail.jpg"
+                alt="Pair of beige and white leather sneakers balanced on stacked stones, with a dry branch in the foreground."
+              />
+              <img
+                src="./img/image-product-3-thumbnail.jpg"
+                alt="Pair of beige and white leather sneakers balanced on stacked rocks against an orange background."
+              />
+              <img
+                src="./img/image-product-4-thumbnail.jpg"
+                alt="Pair of beige and white leather sneakers balanced on stacked light gray stones against an orange background."
+              />
+            </div>
+          </div>
+        </section>
+        <!-- content -->
+        <section class="content">
+          <h1 class="title">
+            <span class="company">Sneaker Company</span>Fall Limited Edition
+            Sneakers
+          </h1>
+          <p class="info">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price">
+            <div class="new-price">
+              <p class="now">$125.00</p>
+              <span>50%</span>
+            </div>
+            <p class="old-price">$250.00</p>
+          </div>
+          <div class="buttons">
+            <div class="amount-btn">
+              <button id="minus">
+                <img src="./img/icon-minus.svg" alt="color orange minus icon" />
+              </button>
+              <p class="amount">0</p>
+              <button id="plus">
+                <img src="./img/icon-plus.svg" alt="color orange plus icon" />
+              </button>
+            </div>
+            <button class="add_btn" type="button">
+              <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                  fill="#1d2025"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              Add to cart
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- Lightbox -->
+    <div class="lightbox invisible">
+      <div class="lightbox-container">
+        <button class="close-lightbox">
+          <img src="./img/icon-close.svg" alt="close icon" />
+        </button>
+        <div class="lightbox-btn-wrapper">
+          <button
+            class="lightbox-prev-btn"
+            type="button"
+            id="prevBtn"
+            aria-label="Previous image"
+          >
+            <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 1 3 9l8 8"
+                stroke="#1D2026"
+                stroke-width="3"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <button
+            class="lightbox-next-btn"
+            type="button"
+            id="nextBtn"
+            aria-label="Next image"
+          >
+            <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m2 1 8 8-8 8"
+                stroke="#1D2026"
+                stroke-width="3"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+        <img
+          src="./img/image-product-1.jpg"
+          alt="A pair of stylish sneakers with a beige and white color scheme, displayed against an orange and beige background."
+          class="main-thumbnail invisible-mob"
+        />
+        <div class="preview">
+          <img
+            class="selected"
+            src="./img/image-product-1-thumbnail.jpg"
+            alt="A pair of stylish sneakers with a beige and white color scheme, displayed against an orange and beige background."
+          />
+          <img
+            src="./img/image-product-2-thumbnail.jpg"
+            alt="Pair of beige and white leather sneakers balanced on stacked stones, with a dry branch in the foreground."
+          />
+          <img
+            src="./img/image-product-3-thumbnail.jpg"
+            alt="Pair of beige and white leather sneakers balanced on stacked rocks against an orange background."
+          />
+          <img
+            src="./img/image-product-4-thumbnail.jpg"
+            alt="Pair of beige and white leather sneakers balanced on stacked light gray stones against an orange background."
+          />
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
