@@ -1,6 +1,6 @@
 const menuBtn = document.getElementById('menu-btn');
 const closeBtn = document.querySelector('.close-btn');
-const menu = document.querySelector('.nav_links');
+const menu = document.querySelector('.nav-links-wrapper');
 const overlay = document.querySelector('.overlay');
 const mainThumbnail = document.querySelector('.main-thumbnail');
 const mainThumbnailLightBox = document.querySelector(

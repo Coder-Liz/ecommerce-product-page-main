@@ -25,6 +25,15 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -516,27 +525,34 @@ h1 {
     transition: opacity 0.3s ease-in-out, visibility 0s 0.3s;
   }
 
-  .nav_links {
+  .nav-links-wrapper {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     width: 60%;
     z-index: 999;
-    gap: 2rem;
     padding: 2rem;
-    align-items: flex-start;
     margin: 0;
-    flex-direction: column;
     background-color: var(--White);
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-left: 0;
 
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
   }
 
-  .active {
-    display: flex;
+  .nav_links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-left: 0;
+  }
 
+  .active {
     transform: translateX(0);
     opacity: 1;
     visibility: visible;
