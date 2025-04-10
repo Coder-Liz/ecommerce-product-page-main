@@ -11,10 +11,20 @@
     />
     <title>Frontend Mentor | E-commerce product page</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="./app.js"></script>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(26, 100%, 55%);
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-      <!-- navbar area -->
       <nav aria-label="Main navigation">
         <div class="nav_container">
           <div class="nav_left-section">
@@ -40,7 +50,6 @@
             </ul>
           </div>
           <div class="nav_right-section">
-            <!-- Cart area -->
             <div class="cart-container">
               <button class="cart-btn">
                 <span class="indicator"></span>
@@ -63,12 +72,11 @@
         </div>
       </nav>
       <main>
-        <!-- thumbnails -->
         <section class="thumbnails">
           <img
             src="./img/image-product-1.jpg"
             alt="product"
-            class="main-thumbnail invisible-mob"
+            class="main-thumbnail invisible-mobile"
           />
           <div class="mobile-thumb hidden">
             <img
@@ -167,7 +175,13 @@
     <div class="lightbox invisible">
       <div class="lightbox-container">
         <button class="close-lightbox">
-          <img src="./img/icon-close.svg" alt="close icon" />
+          <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+              fill="#69707D"
+              fill-rule="evenodd"
+            />
+          </svg>
         </button>
         <div class="lightbox-btn-wrapper">
           <button
@@ -206,7 +220,7 @@
         <img
           src="./img/image-product-1.jpg"
           alt="A pair of stylish sneakers with a beige and white color scheme, displayed against an orange and beige background."
-          class="main-thumbnail invisible-mob"
+          class="main-thumbnail invisible-mobile"
         />
         <div class="preview">
           <img
@@ -229,6 +243,13 @@
         </div>
       </div>
     </div>
-    <script src="./app.js"></script>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Liz</a>.
+      </div>
+    </footer>
   </body>
 </html>

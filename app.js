@@ -118,12 +118,12 @@ function addItem() {
     wrp.classList.remove('empty');
     wrp.innerHTML = `<div class="product">
                           <div>
-                            <img src="./img/image-product-1-thumbnail.jpg" class="product-img" alt="product">
+                            <img src="./img/image-product-1-thumbnail.jpg" class="product-img" alt="main image product">
                             <div class="product-info">
                               <p class="product-title">Fall Limited Edition Sneakers</p>
                              <p><span>$125.00</span> × <span class="number">${amountValue}</span> <b>$${total}</b></p>
                             </div>
-                            <button class="delete-btn" onclick="deleteItem()"><img src="./img/icon-delete.svg" alt="delete"></button>
+                            <button class="delete-btn" onclick="deleteItem()"><img src="./img/icon-delete.svg" alt="delete icon"></button>
                           </div>
                           <button class="checkout-btn">Checkout</button>
                         </div>`;
