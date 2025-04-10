@@ -251,7 +251,6 @@ main {
 
 .main-thumbnail {
   border-radius: 10px;
-  width: 1100px;
   cursor: pointer;
 }
 
@@ -570,6 +569,8 @@ h1 {
   main {
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    gap: clamp(1.5rem, 0.07rem + 6.11vw, 3rem);
     margin-inline: 0;
     height: 100%;
     margin-bottom: 4rem;
@@ -580,7 +581,7 @@ h1 {
   }
 
   .content {
-    margin: 2rem;
+    margin-inline: 2rem;
     height: 50%;
 
     max-width: 608px;
@@ -598,7 +599,7 @@ h1 {
 
     max-width: 608px;
     border-radius: 15px;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 
   .mobile-thumb img {
